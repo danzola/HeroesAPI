@@ -27,5 +27,10 @@ namespace HeroesAPI.Controllers
         {
             return _context.Heroes.ToList();
         }
+
+        public Heroes Get(int id)
+        {
+            return _context.Heroes.Find(id);
+        }
     }
 }
