@@ -28,6 +28,8 @@ namespace HeroesAPI.Controllers
             return _context.Heroes.ToList();
         }
 
+        [HttpGet]
+        [Route("{id:int}")]
         public Heroes Get(int id)
         {
             return _context.Heroes.Find(id);
